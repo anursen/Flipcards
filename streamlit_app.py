@@ -18,7 +18,7 @@ if percent_complete == 99:
      st.write('Loading Complete')
 
      
-st.button(label, key=None, help=None, on_click=None, disabled=False)
+#st.button(label, key=None, help=None, on_click=None, disabled=False)
 
 
 st.number_input('Please set your level', min_value=10, max_value=2000, step=10, format=None, key=None, help=None, on_change=None)
