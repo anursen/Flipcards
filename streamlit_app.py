@@ -18,5 +18,5 @@ if percent_complete == 99:
      st.write('Loading Complete')
 
      
-st.button(label, key=None, help=None, on_click=None, args=None, kwargs=None, *, disabled=False)
+st.button(label, key=None, help=None, on_click=None, disabled=False)
 
