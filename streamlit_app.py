@@ -43,6 +43,6 @@ for i in range(3):
 df = pd.DataFrame({'col1': [1, 2], 'col2': [3, 4]})
 st.table(df)
 
-st.form_submit_button(label="Submit", help=None, on_click='AA')
+st.form_submit_button(label="Submit", help=None)
 
 
