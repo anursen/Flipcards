@@ -43,6 +43,18 @@ for i in range(3):
 df = pd.DataFrame({'col1': [1, 2], 'col2': [3, 4]})
 st.table(df)
 
-st.form_submit_button(label="Submit",on_click=None)
+
+with st.form("my_form"):
+    st.write("Inside the form")
+    slider_val = st.slider("Form slider")
+    checkbox_val = st.checkbox("Form checkbox")
+
+    # Every form must have a submit button.
+    submitted = st.form_submit_button("Submit")
+    if submitted:
+        st.write("slider", slider_val, "checkbox", checkbox_val)
+
+st.write("Outside the form")
+
 
 
