@@ -40,5 +40,5 @@ with col3:
 for i in range(3):
      st.write(i)
    
-df = pd.DataFrame({'es':'en','si':'yes'})
+df = pd.DataFrame({'col1': [1, 2], 'col2': [3, 4]})
 st.table(df)
