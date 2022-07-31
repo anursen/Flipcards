@@ -2,30 +2,6 @@ import streamlit as st
 import pandas as pd
 import time
 
-st.title('Here is your Flipcard Game to learn Spanish')
-st.text('We gathered 2000 most used Spanish words and create a game for you.')
-
-
-
-level = None
-seconds = None
-
-with st.form("my_form"):
-    st.write("Please set the word number")
-    slider_val = st.slider("Word Count",min_value=10, max_value=2000, value=100, step=10)
-    slider_val = st.slider("Question time",min_value=1, max_value=10, value=5, step=1)
-    #checkbox_val = st.checkbox("Form checkbox")
-
-    # Every form must have a submit button.
-    submitted = st.form_submit_button("Submit")
-    if submitted:
-        level = slider_val
-        seconds = slider_val
-        st.write(key1,key2)
-
-st.write("Outside the form")
-
-
 
 class FlipCard:
 
@@ -76,6 +52,28 @@ class FlipCard:
 
 
 
+st.title('Here is your Flipcard Game to learn Spanish')
+st.text('We gathered 2000 most used Spanish words and create a game for you.')
+
+level = None
+seconds = None
+
+with st.form("my_form"):
+    st.write("Please set the word number")
+    slider_val = st.slider("Word Count",min_value=10, max_value=2000, value=100, step=10)
+    slider_val = st.slider("Question time",min_value=1, max_value=10, value=5, step=1)
+    #checkbox_val = st.checkbox("Form checkbox")
+
+    # Every form must have a submit button.
+    submitted = st.form_submit_button("Submit")
+    if submitted:
+        level = slider_val
+        seconds = slider_val
+
+st.write("Outside the form")
+
+
+
 while level and seconds != None:
 
     game = FlipCard(level = level)
@@ -87,10 +85,10 @@ while level and seconds != None:
 
 
 
-
+'''
 my_bar = st.progress(0)
 
-'''
+
 for percent_complete in range(100):
      time.sleep(0.1)
      my_bar.progress(percent_complete + 1)
