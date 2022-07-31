@@ -7,7 +7,8 @@ st.text('We gathered 2000 most used Spanish words and create a game for you.')
 
 
 
-
+key1 = None
+key2 = None
 
 with st.form("my_form"):
     st.write("Please set the word number")
