@@ -8,6 +8,29 @@ st.text('We gathered 2000 most used Spanish words and create a game for you.')
 
 
 
+
+with st.form("my_form"):
+    st.write("Please set the word number")
+    slider_val = st.slider("Word Count",min_value=10, max_value=2000, value=100, step=10)
+    slider_val = st.slider("Question time",min_value=1, max_value=10, value=5, step=1)
+    #checkbox_val = st.checkbox("Form checkbox")
+
+    # Every form must have a submit button.
+    submitted = st.form_submit_button("Submit")
+    if submitted:
+        key1 = slider_val
+        key2 = silder_val
+        st.write(key1,key2)
+
+st.write("Outside the form")
+
+
+
+
+
+
+
+
 my_bar = st.progress(0)
 
 '''
@@ -42,20 +65,6 @@ for i in range(3):
    
 df = pd.DataFrame({'col1': [1, 2], 'col2': [3, 4]})
 st.table(df)
-
-
-with st.form("my_form"):
-    st.write("Please set the word number")
-    slider_val = st.slider("Word Count",min_value=10, max_value=2000, value=100, step=10)
-    slider_val = st.slider("Question time",min_value=1, max_value=10, value=5, step=1)
-    #checkbox_val = st.checkbox("Form checkbox")
-
-    # Every form must have a submit button.
-    submitted = st.form_submit_button("Submit")
-    if submitted:
-        st.write("slider", slider_val, "slider", slider_val )
-
-st.write("Outside the form")
 
 
 
