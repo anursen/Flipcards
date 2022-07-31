@@ -19,7 +19,7 @@ with st.form("my_form"):
     submitted = st.form_submit_button("Submit")
     if submitted:
         key1 = slider_val
-        key2 = silder_val
+        key2 = slider_val
         st.write(key1,key2)
 
 st.write("Outside the form")
