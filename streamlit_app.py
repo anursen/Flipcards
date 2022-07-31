@@ -22,4 +22,17 @@ if percent_complete == 99:
 #st.button(label, key=None, help=None, on_click=None, disabled=False)
 
 
-st.number_input('Please set your level', min_value=10, max_value=2000, step=10, format=None, key=None, help=None, on_change=None)
+st.number_input('Please set your level(Max 2000)', min_value=10, max_value=2000, step=10, format=None, key=None, help=None, on_change=None)
+
+
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.header("A cat")
+
+with col2:
+    st.header("A dog")
+
+
+with col3:
+    st.header("An owl")
