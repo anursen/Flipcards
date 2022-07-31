@@ -45,9 +45,10 @@ st.table(df)
 
 
 with st.form("my_form"):
-    st.write("Inside the form")
-    slider_val = st.slider("Form slider")
-    checkbox_val = st.checkbox("Form checkbox")
+    st.write("Please set the word number")
+    slider_val = st.slider("Word Count",min_value=10, max_value=2000, value=100, step=10)
+    slider_val = st.slider("Question time",min_value=1, max_value=10, value=5, step=1)
+    #checkbox_val = st.checkbox("Form checkbox")
 
     # Every form must have a submit button.
     submitted = st.form_submit_button("Submit")
