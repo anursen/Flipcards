@@ -36,3 +36,6 @@ with col2:
 
 with col3:
     st.header("An owl")
+
+for i in range(3):
+     st.write('i')
