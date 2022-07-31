@@ -38,4 +38,7 @@ with col3:
     st.header("An owl")
 
 for i in range(3):
-     st.write('i')
+     st.write(i)
+   
+df = pd.DataFrame({'es':'en','si':'yes'})
+st.table(df)
