@@ -27,7 +27,7 @@ st.write("Outside the form")
 
 
 
-While key1 and key2 != None:
+while key1 and key2 != None:
     st.write('Lets go')
 
 
