@@ -73,16 +73,13 @@ with st.form("my_form"):
 st.write("Outside the form")
 
 
+st.code('for i in range(8): foo()')
 
 while level and seconds != None:
 
     game = FlipCard(level = level)
     question = game.get_question()
     
-
-    
-    
-
 
 
 '''
