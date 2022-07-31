@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import time
-from flipcard import Flipcard
+from flipcard1 import Flipcard
 
 
 st.title('Here is your Flipcard Game to learn Spanish')
